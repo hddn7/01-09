@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+</head>
+<body>
+<script>
+  const usuarioDigitado = prompt("Digite o nome de usuário:");
+  const senhaDigitada = prompt("Digite a senha:");
+
+  const usuarioCorreto = "admin";
+  const senhaCorreta = "1234";
+
+  if (usuarioDigitado === usuarioCorreto && senhaDigitada === senhaCorreta) {
+    alert("Login bem-sucedido!");
+  } else if (usuarioDigitado === usuarioCorreto && senhaDigitada !== senhaCorreta) {
+    alert("Senha incorreta!");
+  } else {
+    alert("Usuário não encontrado!");
+  }
+</script>
+</body>
+</html>
